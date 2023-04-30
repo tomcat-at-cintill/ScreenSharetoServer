@@ -13,5 +13,5 @@ while True:
     pixels = list(smallimg.getdata())
 
     requests.post("https://screenshare.cintill.repl.co/getdata", data={"image": str([pixels, smallimg.mode, smallimg.size])})
-
-    print("updated!")
+    if len(sys.argv) != 3:
+        print("updated!")
