@@ -1,0 +1,10 @@
+<body><div id="image"></div></body>
+
+<script>
+  let hi = 0
+  setInterval(function(){
+    document.getElementById("image").innerHTML += "<img id=\"genimg\" src=\"result.png?"+hi+"\" \\>"
+    document.body.scrollTop = document.body.scrollHeight
+    hi++
+  }, 500);
+</script>
